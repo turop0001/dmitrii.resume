@@ -315,6 +315,13 @@ label.f input,label.f select{background:#0d0d0b;border:1px solid var(--line2);bo
 .fc b,.heroStats b{font-weight:400}
 .eyebrow,.tag,.eb,.fchip.sk1 .kk,.ec .ty,.pi .no,.opt i,.nav .tag{font-family:var(--f-body);font-weight:500}
 text.dcen{font-family:var(--f-body)}
+
+/* разделение заголовков разделов и карточек */
+.sectitle{margin:0 0 22px!important;padding:0 0 14px;border-bottom:1px solid rgba(255,255,255,.14);justify-content:flex-start;align-items:center;gap:14px}
+.sectitle::before{content:"";width:4px;height:26px;border-radius:2px;background:var(--accent);flex:none}
+.sectitle h2{font-size:24px!important;line-height:1.2;letter-spacing:-.01em;text-transform:none;color:#f4efe6;font-weight:600}
+main section+section,.wrap section+section{margin-top:64px}
+@media(max-width:640px){.sectitle h2{font-size:20px!important}main section+section,.wrap section+section{margin-top:48px}}
 </style>
 
 </head><body>
