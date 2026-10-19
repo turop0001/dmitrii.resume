@@ -18,7 +18,7 @@
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;overflow-x:hidden;background:radial-gradient(1200px 700px at 80% -10%,var(--scene-top),transparent 60%),linear-gradient(180deg,#0F0F0E,#070706 70%);background-color:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.55;-webkit-font-smoothing:antialiased;padding-block:0 70px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
-.wrap{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+.wrap{max-width:1380px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
 a{color:var(--accent-hi)}
 button,input,select,textarea{font:inherit;color:inherit}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -322,6 +322,13 @@ text.dcen{font-family:var(--f-body)}
 .sectitle h2{font-size:24px!important;line-height:1.2;letter-spacing:-.01em;text-transform:none;color:#f4efe6;font-weight:600}
 main section+section,.wrap section+section{margin-top:64px}
 @media(max-width:640px){.sectitle h2{font-size:20px!important}main section+section,.wrap section+section{margin-top:48px}}
+.sg::before{display:none!important}
+.sg{background:rgba(242,236,223,.035)!important;border:1px solid rgba(242,236,223,.12)!important}
+.sg.dash{background:transparent!important;border:1px dashed rgba(242,236,223,.22)!important}
+.tg{background:rgba(242,236,223,.05)!important;border:1px solid rgba(242,236,223,.16)!important}
+.pi{border-top:0!important}
+.pc{border-top:0!important}
+.hero h1{font-size:clamp(36px,5.4vw,68px)}
 </style>
 
 </head><body>
@@ -330,8 +337,8 @@ main section+section,.wrap section+section{margin-top:64px}
 
   <section class="hero">
     <div>
-      <div class="eyebrow">Чаты · Контент · Таблицы и отчёты · Лендинги · Боты · Менеджмент проектов и сотрудников</div>
-      <h1>Беру на себя <em>ежедневные задачи</em> и показываю результат</h1>
+      <div class="eyebrow">Чаты · Контент · Таблицы и отчёты · Лендинги · Боты<br>Менеджмент проектов и сотрудников</div>
+      <h1>Беру на себя<br><em>ежедневные задачи</em><br>и показываю<br>результат</h1>
       <p class="lead">Дмитрий, удалённый сотрудник. Отвечаю клиентам в чатах, пишу тексты, собираю таблицы, отчёты и презентации, делаю лендинги, ищу и сверяю информацию, помогаю с монтажом видео. Задачу беру целиком и сообщаю, когда она закрыта.</p>
       <div class="cta"><a class="btn pri" href="https://t.me/dmitrii_barinov" target="_blank" rel="noopener noreferrer">Написать в Telegram</a><a class="btn" href="#skills">Навыки</a><a class="btn" href="#work">Примеры работ</a></div>
       <div class="heroStats"><div><b>4–5 ч</b><span>в день, на постоянной основе</span></div><div><b>RU · EN</b><span>английский: Intermediate</span></div><div><b>7</b><span>групп навыков</span></div></div>
